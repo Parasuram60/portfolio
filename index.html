@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-color: #322653;
+            --btn-color: #EA1179;
+            --section-color: #504275; /* New section color */
+            --box-shadow: 0px 0px 5px var(--btn-color);
+            --color: #fff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--color);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 10%;
+            box-shadow: 0px 15px 10px -15px var(--btn-color);
+        }
+
+        .logo {
+            color: var(--color);
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        .logo label {
+            color: var(--btn-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul a {
+            color: var(--color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul a:hover {
+            color: var(--btn-color);
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 90vh;
+        }
+
+        .heading {
+            text-align: left;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--btn-color);
+        }
+
+        .about-content {
+            width: 40%;
+            margin-left: 10%;
+        }
+
+        section {
+            padding: 40px 10%;
+            background-color: var(--section-color);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .section-content {
+            text-align: left;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        a img {
+            width: 150px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        a img:hover {
+            transform: scale(1.1);
+        }
+
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="header_menu">
+        <a class="logo" href="#">Welcome <label>My Portfolio</label></a>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Studies">Studies</a></li>
+                <li><a href="#Skils">Skills</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="home" id="Home">
+    <div class="container">
+        <div class="left">
+            <h1>Hi</h1>
+            <h1>Welcome To My <label class="sub_title">Portfolio</label></h1>
+            <h1>My Name is <label class="sub_title"><br>G.H. Parasuram</label></h1>
+        </div>
+        <div class="right">
+            <img src="ju (1).jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="about" id="About">
+    <h1 class="heading"><span>About</span></h1>
+    <div class="about-content">
+        <p>My Name is G.H. Parasuram, I am studying in PSCMR College for B.Tech 2nd-Year 2nd-Sem in CSE [Data Science]. I create Tableau dashboards and Power BI dashboards. My hobbies include playing games and listening to songs.</p>
+    </div>
+</section>
+
+<section class="studies" id="Studies">
+    <div class="section-content">
+        <h1 class="heading"><span>Studies</span></h1>
+        <p>I completed my 10th class at Rakesh Public School, and my intermediate at MJPAPBCW Residential College. Now, I am studying in 2nd Year B.Tech, specializing in CSE [Data Science].</p>
+    </div>
+</section>
+
+<section class="skills" id="Skils">
+    <div class="section-content">
+        <h1 class="heading"><span>Skills</span></h1>
+        <p>I can create Tableau dashboards.<br>
+           I can create Power BI dashboards.<br>
+           I can write C-language programs.<br>
+           I can write Java programs.<br>
+           I can write Python programs.</p>
+    </div>
+</section>
+
+<section class="certificates" id="Certificates">
+    <div class="section-content">
+        <h1 class="heading"><span>Certificates</span></h1>
+        <a href="#"><img src="certificate-1.jpg" alt="Certificate 1"></a>
+        <a href="#"><img src="certificate-2.jpg" alt="Certificate 2"></a>
+    </div>
+</section>
+
+<section class="projects" id="Projects">
+    <div class="section-content">
+        <h1 class="heading"><span>Projects</span></h1>
+        <a href="#"><img src="project-1.jpg" alt="Project 1"></a>
+        <a href="#"><img src="project-2.jpg" alt="Project 2"></a>
+        <a href="#"><img src="project3.jpg" alt="Project 3"></a>
+    </div>
+</section>
+
+<section class="contact" id="Contact">
+    <div class="section-content">
+        <h1 class="heading"><span>Contact</span></h1>
+        <p><b>Mobile no:</b> +91 9247800988</p>
+        <p><b>Email:</b> hygrivaparasuram@gmail.com</p>
+    </div>
+</section>
+
+</body>
+</html>
